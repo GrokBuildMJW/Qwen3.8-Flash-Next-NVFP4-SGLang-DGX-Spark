@@ -1,0 +1,16 @@
+This tree's launch scripts and notes are MIT (see LICENSE).
+
+The GB10 patches under patches/ are vendored from
+shantanugoel/qwen38-flash-next-sglang-dgx-spark @ 6a81afc80e1c4c64720a0b161e75d3ae7cc3ce4b
+(Apache-2.0 glue; the two mmap/QSA patches themselves are adapted from
+hashd1ve/qwen38-flash-next-one-dgx-spark, MIT):
+
+  patches/ple_mmap.py
+  patches/ple_reuse.py
+  patches/qsa_drop_sm121_sdpa.py
+  patches/qsa_trtllm_sm120.py
+
+See those files for their original notices.
+
+SGLang is Apache-2.0. Model weights are not stored here and remain subject
+to the Qwen / RadixArk checkpoint licenses.
